@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+    {% if chart %}
+        <img src="data:image/png;base64, {{chart|safe}}" >
+    {% endif %}
+
+
+{% endblock content %}
